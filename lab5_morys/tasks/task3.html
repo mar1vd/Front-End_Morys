@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .exp {
+        height: 50px;
+        max-width: 1000px;
+        background-color: aquamarine;
+        position: relative;
+        left: 500px;
+      }
+      .exf {
+        height: 50px;
+        float: left;
+        background-color: bisque;
+      }
+      .floated {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .box1 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #3498db;
+        top: 300px;
+        left: 150px;
+        z-index: 1;
+      }
+      .box2 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #e74c3c;
+        top: 400px;
+        left: 250px;
+        z-index: 2;
+      }
+      .box3 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #2ecc71;
+        top: 500px;
+        left: 350px;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <a style="display: block; text-align: right" href="../../index.html">
+      На головну
+    </a>
+    <a style="display: block; text-align: right" href="../lab5.html">
+      Лабораторна 5
+    </a>
+    <div class="exp">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum eius quo
+      dolor pariatur, adipisci expedita ullam iusto? Sint, ad placeat.
+    </div>
+    <div class="exf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, fugiat!
+    </div>
+    <br /><br /><br />
+    <div class="floated">Floated 1</div>
+    <div class="floated">Floated 2</div>
+    <div class="clearfix"></div>
+    <p>This text is cleared.</p>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+  </body>
+</html>
