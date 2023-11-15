@@ -3,19 +3,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    outline: 2px solid red; /* Зовнішній контур */
-  }
+    outline: 2px solid red;   }
 
   header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-    border-radius: 10px; /* Заокруглення кутів */
+    border-radius: 10px; 
   }
   header,
   footer {
-    color: #fff; /* White text color */
+    color: #fff; 
   }
   header h1 {
     margin: 0;
@@ -42,8 +41,8 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    resize: both; /* Дозволити зміну розміру блоків */
-    overflow: auto; /* Додаткові показники прокрутки при зміні розміру */
+    resize: both; 
+    overflow: auto;
   }
 
   article {
@@ -71,8 +70,8 @@ body {
   a {
     color: #0073e6;
     text-decoration: none;
-    color: #d7e600; /* Yellow text color */
-    cursor: pointer; /* Змінює стиль курсору */
+    color: #d7e600; 
+    cursor: pointer; 
   }
   a:hover {
     text-decoration: underline;
@@ -113,7 +112,7 @@ body {
     margin-right: 10px;
   }
 
-  /* Define the quotes for content insertion */
+  
   .insert-content::before {
     content: open-quote;
   }
@@ -122,33 +121,33 @@ body {
   }
   .inline-image {
     display: inline-block;
-    max-width: 200px; /* Adjust the maximum width as needed */
-    margin-right: 20px; /* Add some space between the images */
-    vertical-align: top; /* Align images to the top of their containers */
+    max-width: 200px;
+    margin-right: 20px; 
+    vertical-align: top;
 
     /* Rounded corners */
-    border-radius: 10px; /* Adjust the border radius as needed */
-    overflow: hidden; /* Ensures the rounded corners display properly */
+    border-radius: 10px;
+    overflow: hidden; 
   }
   .inline-imagefirst {
     display: inline-block;
-    max-width: 200px; /* Adjust the maximum width as needed */
-    margin-right: 20px; /* Add some space between the images */
-    vertical-align: top; /* Align images to the top of their containers */
+    max-width: 200px; 
+    margin-right: 20px; 
+    vertical-align: top; 
 
     /* Rounded corners */
-    border-radius: 10px; /* Adjust the border radius as needed */
-    overflow: hidden; /* Ensures the rounded corners display properly */
+    border-radius: 10px;
+    overflow: hidden; 
   }
   .inline-imagesecond {
     display: inline-block;
-    max-width: 200px; /* Adjust the maximum width as needed */
-    margin-right: 20px; /* Add some space between the images */
-    vertical-align: top; /* Align images to the top of their containers */
+    max-width: 200px; 
+    margin-right: 20px; 
+    vertical-align: top; 
 
     /* Rounded corners */
-    border-radius: 10px; /* Adjust the border radius as needed */
-    overflow: hidden; /* Ensures the rounded corners display properly */
+    border-radius: 10px;
+    overflow: hidden; 
   }
   /* Border Image */
   .rounded-border {
@@ -158,25 +157,25 @@ body {
     border-image-repeat: round;
     border-image-outset: 10px;
   }
-  /* Додати плавний перехід для властивостей color та background-color в елементі h1 */
+  
   h1 {
     background: linear-gradient(to right, #ffa500, #ff4500);
     -webkit-background-clip: text;
     color: transparent;
     transition-property: color, background-color; /* Властивості, які будуть переходити */
-    transition-duration: 0.5s; /* Тривалість переходу у секундах */
-    transition-timing-function: ease; /* Функція, яка визначає характер переходу (наприклад, ease, linear, ease-in-out) */
-    transition-delay: 0s; /* Затримка перед початком переходу у секундах */
+    transition-duration: 0.5s; 
+    transition-timing-function: ease; 
+    transition-delay: 0s; 
   }
 
-  /* При фокусі змінюйте колір та тінь тексту з іншою тривалістю переходу */
+  
   h1:hover {
     color: #fffffff4;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
     transition-duration: 0.3s;
   }
 
-  /* Короткий запис переходу для input */
+  
   input {
     padding: 10px;
     font-size: 16px;
@@ -187,7 +186,7 @@ body {
       border-color 0.5s ease;
   }
 
-  /* Додайте трансформацію, тінь та плавний перехід для елементу .inline-image */
+  
   .inline-image {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center center;
@@ -200,11 +199,11 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center center;
   }
-  /* Застосуйте translateX(10px) та тінь при наведенні на елемент .inline-image */
+  
   .inline-image:hover {
     transform: translateX(10px);
     transform: scale(1.1);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Додайте тінь для видимості */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
     transform: matrix(
       1,
       0,
@@ -212,10 +211,10 @@ body {
       1,
       10,
       5
-    ); /* Матриця трансформації: зміщення вправо на 10px та вниз на 5px */
+    ); 
   }
   .inline-imagefirst:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Додайте тінь для видимості */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
     transform: scale(1.1) matrix3d(
     1, 0, 0, 0,    /* a, b, c, d */
     0, 1, 0, 0,    /* e, f, g, h */
@@ -224,23 +223,21 @@ body {
   );
   }
   .inline-imagesecond:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Додайте тінь для видимості */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transform: perspective(500px) translateZ(200px);
   }
-  
-  /* Градієнтне оформлення тексту */
+   
   h1 {
     background: linear-gradient(to right, #ffa500, #ff4500);
     -webkit-background-clip: text;
     color: transparent;
   }
 
-  /* CSS3-тінь блоку */
   main {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   }
 
-  /* Градієнтна рамка */
+
   header {
     border: 5px solid transparent;
     background-clip: padding-box;
@@ -249,22 +246,21 @@ body {
     border-image-slice: 1;
   }
 
-  /* CSS3-рамка: Рамки-зображення */
   main {
     border-image-source: linear-gradient(to right, #ffa500, #ff4500);
-    border-image-slice: 1; /* Елементи рамки-зображення */
-    border-image-repeat: round; /* Повторення рамки-зображення */
-    border-image-outset: 10px; /* Зміщення рамки-зображення */
+    border-image-slice: 1; 
+    border-image-repeat: round;
+    border-image-outset: 10px; 
   }
   input {
-    caret-color: transparent; /* Змініть 'red' на колір, який ви хочете використовувати для курсора */
-    padding: 10px; /* Додайте відступи, які вам подобаються */
-    font-size: 16px; /* Змініть розмір шрифту, якщо потрібно */
-    border: 1px solid #ccc; /* Додайте рамку навколо input, якщо потрібно */
-    border-radius: 5px; /* Заокруглення кутів, якщо потрібно */
+    caret-color: transparent; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
   }
   input:focus {
-    outline: none; /* Забороніть браузеру рисувати власний фокус */
-    border-color: #0073e6; /* Змініть колір рамки при фокусі */
-    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Додайте тінь при фокусі, якщо потрібно */
+    outline: none; 
+    border-color: #0073e6; 
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); 
   }
