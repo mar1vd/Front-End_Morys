@@ -130,7 +130,17 @@ body {
     border-radius: 10px; /* Adjust the border radius as needed */
     overflow: hidden; /* Ensures the rounded corners display properly */
   }
-  .inline-image1 {
+  .inline-imagefirst {
+    display: inline-block;
+    max-width: 200px; /* Adjust the maximum width as needed */
+    margin-right: 20px; /* Add some space between the images */
+    vertical-align: top; /* Align images to the top of their containers */
+
+    /* Rounded corners */
+    border-radius: 10px; /* Adjust the border radius as needed */
+    overflow: hidden; /* Ensures the rounded corners display properly */
+  }
+  .inline-imagesecond {
     display: inline-block;
     max-width: 200px; /* Adjust the maximum width as needed */
     margin-right: 20px; /* Add some space between the images */
@@ -182,7 +192,11 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center center;
   }
-  .inline-image1 {
+  .inline-imagefirst {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center center;
+  }
+  .inline-imagesecond {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-origin: center center;
   }
@@ -200,11 +214,20 @@ body {
       5
     ); /* Матриця трансформації: зміщення вправо на 10px та вниз на 5px */
   }
-  .inline-image1:hover {
-    transform: scale(1.1);
+  .inline-imagefirst:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Додайте тінь для видимості */
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10, 5, 20, 1)translateZ(20px); /* Матриця трансформації: зміщення вправо на 10px, вниз на 5px, та вглиб на 20px */
+    transform: scale(1.1) matrix3d(
+    1, 0, 0, 0,    /* a, b, c, d */
+    0, 1, 0, 0,    /* e, f, g, h */
+    0, 0, 1, 0,    /* i, j, k, l */
+    10, 5, 20, 1   /* m, n, o, p */
+  );
   }
+  .inline-imagesecond:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Додайте тінь для видимості */
+    transform: perspective(500px) translateZ(200px);
+  }
+  
   /* Градієнтне оформлення тексту */
   h1 {
     background: linear-gradient(to right, #ffa500, #ff4500);
