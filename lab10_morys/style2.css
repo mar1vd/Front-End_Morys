@@ -1,0 +1,20 @@
+.card-img-top{
+    width: 500px;
+    height: 300px;
+}
+/* Tablet */
+@media (max-width: 769px) {
+	.carousel-control-prev,
+	.carousel-control-next {
+		display: none;
+	}
+}
+/* Mobile */
+@media(max-width: 431px){
+	.card-text{
+		display: none;
+	}
+	.btn-info{
+		margin-top: 16px;
+	}
+}
