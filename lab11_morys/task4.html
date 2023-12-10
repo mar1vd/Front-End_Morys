@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task4</title>
+    <style>
+      input:valid {
+        border: 2px solid green;
+      }
+      input:invalid {
+        border: 2px solid red;
+      }
+      input:disabled {
+        background-color: #ddd;
+        color: #555;
+      }
+      ul li:nth-child(odd) {
+        background-color: #f0f0f0;
+      }
+      input:required {
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a style="display: block; text-align: right" href="../index.html"
+      >На головну</a
+    >
+    <a style="display: block; text-align: right" href="lab11.html"
+      >Лабораторна робота 11</a
+    >
+    <form>
+      <label for="username">Ім'я користувача:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+
+      <label for="email">Електронна пошта:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+
+      <label for="confirmPassword">Підтвердження паролю:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+      />
+      <br />
+
+      <button type="submit">Відправити</button>
+    </form>
+
+    <ul>
+      <li>Перший елемент</li>
+      <li>Другий елемент</li>
+      <li>Третій елемент</li>
+      <li>Четвертий елемент</li>
+      <li>П'ятий елемент</li>
+    </ul>
+
+    <input type="text" placeholder="Введіть текст" required />
+    <input type="text" placeholder="Необов'язкове поле" />
+  </body>
+</html>

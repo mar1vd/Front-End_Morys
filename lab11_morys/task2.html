@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2</title>
+    <style>
+      .container::before {
+        content: "Before Content ";
+        color: blue;
+      }
+
+      .container::after {
+        content: " After Content";
+        color: red;
+      }
+      .highlight-first-letter::first-letter {
+        font-size: 150%;
+        color: green;
+      }
+      .highlight-first-line::first-line {
+        font-weight: bold;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a style="display: block; text-align: right" href="../index.html"
+      >На головну</a
+    >
+    <a style="display: block; text-align: right" href="lab11.html"
+      >Лабораторна робота 11</a
+    >
+    <div class="container">This is a container.</div>
+
+    <p class="highlight-first-letter">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      euismod bibendum nisi, non maximus lectus cursus a.
+    </p>
+
+    <p class="highlight-first-line">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      euismod bibendum nisi, non maximus lectus cursus a.
+    </p>
+  </body>
+</html>
